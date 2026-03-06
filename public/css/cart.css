@@ -1,0 +1,128 @@
+.cart-page{
+    border-radius: 5px;
+    width: 100%;
+    min-height: 200px;
+    margin-top: 15px;
+    display: flex;
+    gap: 17px;
+}
+
+.order-info{
+    background-color: white;
+    flex: 0 0 25%;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 7px;
+    font-size: 0.9rem;
+    height: 250px;
+}
+
+hr{
+    margin: 17px 0;
+    border: none;
+    border-top: 1px solid #e5e7eb; /* xám nhạt */
+}
+
+.order-info p{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.order-info h3{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+.order-info form input{
+    background-color: blueviolet;
+    border: none;
+    padding: 13px;
+    color: white;
+    font-weight: 500;
+    margin-top: 15px;
+    border-radius: 3px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.cart-info{
+    flex: 0 0 74%;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 7px;
+    height: auto;
+    position: relative;
+}
+
+.buy-more-box{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-info table{
+    border-collapse: separate;
+    width: 100%;
+    font-size: 0.9rem;
+    border-spacing: 0 10px;
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+a.buy-more{
+    outline: 1px solid gainsboro;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 3px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.9rem;
+    transition: 0.3s all;
+}
+
+a.buy-more:hover{
+    background-color: #2F46DA;
+    color: white;
+}
+
+a.delete-all{
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    margin-top: 7px;
+    display: inline-block;
+    font-size: 1.3rem;
+    color: gray;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(-15px,6px);
+    transition: all 0.3s;
+}
+
+a.delete-all:hover{
+    background-color: gray;
+    color:white
+}
+
+a.order-btn{
+    background-color: #2F46DA;
+    color: white;
+    padding: 12px;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 5px;
+}
+
+

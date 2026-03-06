@@ -1,0 +1,31 @@
+RewriteEngine On
+
+#home-------------------
+RewriteRule ^trang-chu$ index.php?mod=home&action=index [L,QSA]
+
+#search-----------------
+RewriteRule ^trang-chu/tim-kiem/([a-z0-9-]+)$ index.php?mod=home&action=index&search_prod=$1 [L,QSA]
+
+#cart-------------------
+RewriteRule ^gio-hang$ index.php?mod=cart&controller=index&action=show_cart [L,QSA]
+RewriteRule ^gio-hang/tien-hanh-thanh-toan$ index.php?mod=checkout&controller=index&action=checkout
+RewriteRule ^gio-hang/dat-hang-thanh-cong$ index.php?mod=checkout&controller=index&action=checkout_complete
+
+#user------------------
+RewriteRule ^dang-nhap$ index.php?mod=user&action=login
+RewriteRule ^dang-ky$ index.php?mod=user&action=register
+RewriteRule ^quen-mat-khau$ index.php?mod=user&action=get_account
+RewriteRule ^trang-chu/thong-tin-thanh-vien$ index.php?mod=user&action=member_info
+
+#post-------------------
+RewriteRule ^bai-viet$ index.php?mod=page&action=blog [L,QSA]
+RewriteRule ^bai-viet/([a-zA-Z0-9-_]+)$ index.php?mod=page&action=blog_details&slug=bai-viet/$1 [L,QSA]
+
+#page-------------------
+RewriteRule ^([a-zA-Z-_]+)$ index.php?mod=page&action=index&slug=$1 [L,QSA]
+
+#product----------------
+RewriteRule ^san-pham/([a-zA-Z0-9-_]+)$ index.php?mod=product&action=index&slug=$1 [L,QSA]
+RewriteRule ^san-pham/([a-zA-Z0-9-_]+)/([a-zA-Z0-9-_]+)$ index.php?mod=product&action=product_details&slug=$2 [L,QSA]
+
+

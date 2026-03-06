@@ -1,0 +1,279 @@
+.box-checkout {
+    background-color: white;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 7px;
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 15px;
+}
+
+#form-order {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 15px;
+}
+
+#form-order .input-group {
+    position: relative;
+    margin-top: 11px;
+}
+
+#form-order input[type='text'] {
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid gainsboro;
+}
+
+#form-order label:not(.payment) {
+    position: absolute;
+    font-size: 14px;
+    left: 15px;
+    transform: translateY(85%);
+    pointer-events: none;
+    color: gray;
+    transition: all 0.2s ease-in-out;
+}
+
+#form-order input[type='text']:focus {
+    outline: 2px solid #2F46DA;
+}
+
+#form-order input[type='text']:focus+label,
+#form-order input[type='text']:not(:placeholder-shown)+label {
+    transform: translateY(-65%);
+    font-size: 12px;
+    background-color: white;
+    padding: 0px 5px;
+    color: #2F46DA !important;
+    left: 10px;
+}
+
+#form-order .btn-login {
+    background-color: #2F46DA;
+    color: white;
+}
+
+#form-order input[type='text']#payment_method {
+    display: inline-block !important;
+    width: auto;
+}
+
+#form-order .payment-item {
+    border: 1px solid gainsboro;
+    padding: 13px;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+
+#form-order input[type='submit'] {
+    background-color: #2F46DA;
+    color: white;
+    cursor: pointer;
+}
+
+#form-order .input-group-payment {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    outline: 1px solid gainsboro;
+    margin-top: 13px;
+    border-radius: 5px;
+    padding: 0px 10px;
+    font-size: 0.9rem;
+    position: relative;
+    width: 350px;
+}
+
+#form-order label.payment {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 12px 10px;
+    padding-right: 30px;
+}
+
+#form-order input[type='radio'] {
+    display: block;
+}
+
+.customer-info {
+    flex: 0 0 53%;
+    border-right: 1px solid gainsboro;
+    padding-right: 20px;
+}
+
+.note-order {
+    flex: 0 0 30%;
+}
+
+.order-bill {
+    flex: 0 0 43%;
+    border-radius: 7px;
+    font-size: 0.9rem;
+
+}
+
+.order-bill .left-order {
+    flex: 0 0 10%;
+}
+
+.order-bill .right-order {
+    flex: 0 0 50%;
+}
+
+.order-item-total {
+    flex: 0 0 25%;
+}
+
+.order-bill ul {
+    list-style: none;
+}
+
+.order-bill ul li {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.order-bill .order-item-img {
+    width: 70px;
+}
+
+.order-bill .order-item-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.note-order {
+    min-height: 155px;
+}
+
+.note-order textarea {
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    margin-top: 12px;
+    width: 100%;
+    min-height: 200px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.note-order textarea:focus {
+    outline: 2px solid #2F46DA;
+}
+
+.order-item-name {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+.confirm-order {
+    background-color: #2F46DA;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 15px;
+    font-weight: bold;
+    border: none;
+}
+
+
+a.back-to-cart {
+    outline: 1px solid gainsboro;
+    color: black;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 6px;
+    transition: all 0.3s;
+}
+
+a.back-to-cart:hover {
+    background-color: #2F46DA;
+    color: white;
+}
+
+/* CHECKOUT-THANH CONG */
+
+.checkout-complete {
+    background-color: white;
+    border-radius: 7px;
+    margin-top: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+a.box-email {
+    padding: 15px;
+    background-color: #2F46DA;
+    color: white;
+    width: 32%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s all;
+}
+
+
+.box-email-problem {
+    background-color: rgb(255, 218, 150);
+    padding: 15px;
+    border-radius: 5px;
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-email-problem i {
+    background-color: orange;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.order-service{
+    border: 1px solid gainsboro;
+    width: 45%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.back-home{
+    background-color: #2F46DA;
+    color: white;
+    padding: 9px 15px;
+    border-radius: 3px;
+    text-decoration: none;
+}

@@ -1,0 +1,129 @@
+.about-us{
+    background-color: white;
+    width: 100%;
+    min-height: 100px;
+    margin-top: 15px;
+    border-radius: 7px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.about-us ul{
+    list-style: none;
+}
+
+.about-us .about-img{
+    box-sizing: border-box;
+    border-radius: 7px;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 450px;
+}
+
+.about-us .about-img img{
+    width: 100%;
+    height: auto;
+}
+
+.about-us .about-info{
+    line-height: 1.8;
+    font-size: 0.9rem;
+    margin-top: 30px;
+}
+
+/* BLOG */
+.blog{
+    background-color: white;
+    margin-top: 15px;
+    padding: 20px;
+    font-size: 0.9rem;
+    border-radius: 7px;
+}
+
+.blog.details{
+    background-color: white;
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 15px;
+}
+
+.blog ul#list-posts{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul#list-posts li{
+    flex-basis: 25%;
+    box-sizing: border-box;
+}
+
+ul#list-posts li a{
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 7px;
+    overflow: hidden;
+    color: black;
+    padding: 10px;
+}
+
+ul#list-posts li a .post-img{
+    height: 190px;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+ul#list-posts li a .post-img img{
+    width: 100%;
+    height: auto;
+}
+
+ul#list-posts li a .post-name{
+    margin-top: 10px;
+}
+
+ul#list-posts li a .post-desc{
+    margin-top: 5px;
+    color: gray;
+}
+
+ul#list-posts li a:hover{
+    text-decoration: underline;
+}
+
+
+
+.post-img-details img{
+    width: 100%;
+    height: auto;
+}
+
+.post-info-details{
+    line-height: 1.7;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.post-img-details{
+    height: 500px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.info{
+   margin-top: 20px;
+}
+
+.post-info-details ul{
+    list-style: none;
+}
+
+a.btn-back{
+    background-color: black;
+    color: white;
+    padding: 7px 15px;
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 7px;
+}

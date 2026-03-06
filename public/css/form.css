@@ -1,0 +1,148 @@
+body {
+    background-color: #212529;
+}
+
+#wrapper{
+    width: 1170px;
+    height: 100vh;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#form-login {
+    width: 47vw;
+    height: auto;
+    border-radius: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-area{
+    flex-basis: 50%;
+    padding: 25px;
+    /* text-align: center; */
+}
+
+.left-area a{
+    font-size: 0.9rem;
+    color: gray;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.left-area span{
+    display: flex;
+    width: 100%;
+    display: inline-block;
+    font-size: 0.9rem;
+    color: gray;
+    padding: 0;
+    margin: 0;
+}
+
+.left-area span a{
+    color: blue;
+}
+
+.right-area{
+    flex-basis: 50%;
+    background-color: #2F46DA;
+    padding: 25px;
+    border-radius: 0 7px 7px 0;
+    color: white;
+}
+
+.right-area h2{
+    margin-bottom: 15px !important;
+}
+
+.right-area p{
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+.right-area a{
+    background-color: white;
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    border-radius: 7px;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+#form-login {
+    box-sizing: border-box;
+    background-color: white;
+}
+
+#form-login h2{
+    margin-bottom: 20px;
+}
+
+#form-login .input-group {
+    position: relative;
+    margin-top: 10px;
+}
+
+#form-login input {
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid gainsboro;
+}
+
+#form-login label{
+    position: absolute;
+    font-size: 14px;
+    left: 15px;
+    transform: translateY(85%);
+    pointer-events: none;
+    color:gray;
+    transition: all 0.2s ease-in-out;
+} 
+
+#form-login input:focus {
+    outline: 2px solid #2F46DA;
+}
+
+#form-login input:focus + label,
+#form-login input:not(:placeholder-shown) + label{
+    transform: translateY(-65%);
+    font-size: 12px;
+    background-color: white;
+    padding: 0px 5px;
+    color: #2F46DA !important;
+    left: 10px;
+}
+
+#form-login .btn-login{
+    background-color: #2F46DA;
+    color:white;
+}
+
+.active-complete{
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.active-complete h2{
+    color: green;
+}
+
+.active-complete a{
+    padding: 10px 20px;
+    background-color: white;
+    margin-top: 25px;
+    display: inline-block;
+    border-radius: 7px;
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,991 @@
+body {
+    background: #f4f4f6;
+}
+
+#wrapper {
+    max-width: 1570px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#wp-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 20px;
+    position: relative;
+}
+
+
+/* ===================================== */
+/* ===========SIDEBAR=================== */
+/* ===================================== */
+
+#sidebar {
+    background-color: #212529;
+    flex-basis: 15%;
+    border-radius: 10px;
+    height: 100%;
+    left: 15px;
+}
+
+#sidebar ul#main-menu {
+    list-style-type: none;
+    padding: 10px 10px;
+    box-sizing: border-box;
+}
+
+#sidebar ul#res-main-menu{
+    display: none;
+}
+
+#sidebar ul#main-menu li {
+    margin-top: 7px;
+}
+
+#sidebar ul#main-menu li span .icon {
+    margin-right: 10px;
+}
+
+#sidebar ul#main-menu li a {
+    padding: 10px 10px;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 7px;
+    transition: all 0.2s ease-in-out;
+}
+
+#sidebar ul#main-menu li a:hover {
+    background-color: #2F46DA;
+
+}
+
+.focus {
+    background-color: #2F46DA !important;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: all 0.2s ease-in-out;
+}
+
+#sidebar ul.sub-menu {
+    list-style: none;
+    font-size: 0.9rem;
+    display: none;
+}
+
+#sidebar ul.sub-menu li {
+    transition: all 0.2s ease-in-out;
+}
+
+#sidebar ul.sub-menu li a:hover {
+    background-color: rgba(220, 220, 220, 0.249) !important;
+}
+
+.focus-sub-link {
+    background-color: rgba(220, 220, 220, 0.249);
+}
+
+
+/* ===================================== */
+/* ===========CONTENT=================== */
+/* ===================================== */
+
+#content {
+    flex-basis: 85%;
+    padding: 10px;
+    padding-top: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+}
+
+#content #top-bar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 7px 7px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#content #top-bar .brand a {
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: black;
+    margin-left: 5px;
+}
+
+#content #top-bar .brand span {
+    background-color: #2F46DA;
+    color: white;
+    border-radius: 5px;
+    padding: 2px 7px;
+    margin-right: 3px;
+}
+
+#content #top-bar .admin-profile {
+    font-size: 0.9rem;
+    text-align: right;
+    display: flex;
+    position: relative;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 7px 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+#content #top-bar .admin-profile:hover {
+    background-color: rgb(241, 241, 241);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#content #top-bar .admin-profile .admin-name {
+    margin-right: 10px;
+}
+
+#content #top-bar .admin-profile .admin-role {
+    color: gray;
+}
+
+#content #top-bar .admin-profile .admin-avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+}
+
+#content #top-bar .admin-profile .admin-avatar img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#content #top-bar .admin-profile .admin-setting {
+    list-style-type: none;
+    position: absolute;
+    right: -7px;
+    transform: translateY(72%);
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    width: 190px;
+    padding: 7px;
+    text-align: left;
+    display: none;
+    z-index: 99;
+}
+
+#content #top-bar .admin-profile .admin-setting li {
+    border-radius: 10px;
+}
+
+#content #top-bar .admin-profile .admin-setting li a {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+}
+
+#content #top-bar .admin-profile .admin-setting li a:hover {
+    background-color: rgb(241, 241, 241);
+}
+
+#content #top-bar .admin-profile:hover .admin-setting {
+    display: block;
+}
+
+#data-show {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 7px;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#data-show .title {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* ===================================== */
+/* ===========STATUS==================== */
+/* ===================================== */
+.status{
+    padding: 6px;
+    border-radius: 5px;
+    width: 110px !important;
+    display: inline-block;
+}
+
+.status.active{
+    background-color: green;
+    color: white;
+}
+
+.status.on{
+    background-color: green;
+    color: white;
+}
+
+.status.inactive{
+    background-color: rgb(255, 149, 0);
+    color: white;
+}
+
+.status.wait{
+    background-color: rgb(255, 149, 0);
+    color:white;
+}
+
+.status.banned{
+    background-color: red;
+    color: white
+}
+
+.status.off{
+    background-color: red;
+    color: white;
+}
+
+.status.test{
+    background-color: gray;
+    color: white;
+}
+
+.status.save{
+    background-color: blue;
+    color: white;
+}
+
+.status.crash{
+    background-color: gray;
+    color: white;
+}
+
+/* -- statis -- */
+
+.statis.on{
+    color: green;
+    background-color: transparent;
+}
+
+.statis.wait{
+    color: orange;
+    background-color: transparent;
+}
+
+.statis.off{
+    color: red;
+    background-color: transparent;
+}
+
+.statis .crash{
+    color:gray;
+    background-color: transparent;
+}
+
+.statis .save{
+    color: blue;
+    background-color: transparent;
+}
+/* ===================================== */
+/* ===========FORM====================== */
+/* ===================================== */
+form {
+    width: 25%;
+}
+
+form .input-group {
+    margin-top: 10px;
+}
+
+form .input-group label {
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+form input,
+textarea,
+select {
+    display: block;
+    padding: 10px 10px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus
+{
+    outline: 2px solid #2F46DA;
+}
+
+form input[type='submit'] {
+    background-color: #2F46DA;
+    color: white;
+    width: auto;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: inline;
+}
+
+.toggle-bar{
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    display: none;
+}
+
+
+
+
+/* ===================================== */
+/* ===========TALBE===================== */
+/* ===================================== */
+
+#data-show .table-responsive{
+    width: 100%;
+    margin-top: 10px;
+    overflow-x: auto;
+}
+
+#data-show .count-total{
+    /* margin-top: 10px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#data-show table{
+    font-size: 0.9rem;
+    width: 100%;
+    border-collapse: collapse; /* Gộp viền */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#data-show table tr,td{
+    white-space: nowrap;
+}
+
+#data-show table thead{
+    background-color: #212529;
+    color: white;
+}
+
+#data-show table td{
+    padding: 10px 0;
+}
+
+#data-show table td:nth-child(1){
+    padding: 0 10px;
+}
+
+#data-show table td:last-child{
+    padding: 0 5px;
+}
+
+#data-show table tr{
+    transition: all 0.2s ease-in-out;
+}
+
+
+#data-show table tr:nth-child(even){
+    background-color: rgb(239, 239, 239);
+}
+
+#data-show table tbody tr:hover{
+    background-color: #cccccc;
+}
+
+#data-show table select{
+    margin: 0 auto;
+    width: auto;
+}
+
+#data-show table input{
+    margin: 0 auto;
+}
+
+.tb_customers td{
+    line-height: 1.7;
+}
+
+.review-table td, .review-table th {
+  border: 1px solid #ccc;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.review-content {
+  white-space: normal;       /* cho phép xuống dòng */
+  word-wrap: break-word;     /* chữ dài vẫn xuống */
+  word-break: break-word;    /* không bị tràn */
+  max-width: 250px;          /* giới hạn chiều rộng */
+}
+
+
+/* ===================================== */
+/* ===========PAGGING=================== */
+/* ===================================== */
+ul.pagination{
+    list-style-type: none;
+    display: flex;
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+ul.pagination li.page-item a.page-link{
+    border: 1px solid gainsboro;
+    padding: 8px 14px;
+    text-decoration: none;
+    border-right: 0;
+    color: black;
+    display: inline-block;
+}
+
+ul.pagination li.page-item a.page-link.next{
+    border-right: 1px solid gainsboro !important;
+    border-radius: 0 7px 7px 0;
+}
+
+ul.pagination li.page-item a.page-link.prev{
+    border-left: 1px solid gainsboro !important;
+    border-radius: 7px 0 0 7px;
+}
+
+.active a{
+    background-color: #2F46DA;
+    height: auto;
+    color: white !important;
+}
+
+/* ===================================== */
+/* ===========ONOTHER FORM============== */
+/* ===================================== */
+
+form#update-cat-status{
+    width: 100%;
+}
+
+form#update-cat-status #btn-update-status{
+    width: 110px;
+}
+
+form#update-cat-status td select{
+    width: 110px;
+    padding: 5px 10px;
+}
+
+form#filter{
+    display: flex;
+    justify-content: space-between;
+    gap: 3px;
+}
+
+form#filter select{
+    width: auto;
+}
+
+form#search {
+    display: flex;
+    width: 300px;
+    position: relative;
+}
+
+form#search button.btn-search{
+    right: -2px;
+    top: 0;
+    padding: 10px 10px;
+    height: 100%;
+    display: inline-block;
+    outline: none;
+    border: none;
+    position: absolute;
+    background-color: transparent;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #2F46DA;
+    border-radius: 0 5px 5px 0;
+    color: white;
+}
+form#add-prod {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+form#add-prod #left-area {
+    flex-basis: 30%;
+}
+
+form#add-prod #right-area {
+    flex-basis: 30%;
+}
+
+form#add-prod .show{
+    border: 1px solid gainsboro;
+    height: 300px;
+    margin-top: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+form#add-prod .show img{
+    max-width: 100%;
+    height: auto;
+}
+
+form#add-prod .show_sub{
+    border: 1px solid gainsboro;
+    height: 80px;
+    margin-top: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+form#add-prod .show_sub img{
+    height: auto;
+    width: 100%;
+}
+
+form#add-post {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+form#add-post #left-area {
+    flex-basis: 30%;
+}
+
+form#add-post #right-area {
+    flex-basis: 30%;
+}
+
+form#add-post .show{
+    border: 1px solid gainsboro;
+    height: 300px;
+    margin-top: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+form#add-post .show img{
+    max-width: 100%;
+    height: auto;
+}
+
+form#add-post .show_sub{
+    border: 1px solid gainsboro;
+    height: 80px;
+    margin-top: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+form#add-post .show_sub img{
+    height: auto;
+    width: 100%;
+}
+
+form#form_filter_status{
+    display: flex;
+    gap: 5px;
+}
+
+form#form_filter_status select{
+    width: auto;
+}
+
+form#form_search{
+    display: flex;
+}
+
+form#form_search input{
+    width: 200px;
+    border-radius: 5px 0 0 5px;
+}
+
+form#form_search button{
+    padding: 0px 10px;
+    background-color: #2F46DA;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+
+form#form_search input:focus{
+    outline: none;
+}
+
+form#add-slider{
+    width: 50%;
+}
+
+form#add-slider .show{
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    height: 300px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+form#add-slider .show img{
+    height: auto;
+    max-width: 100%;
+}
+
+form#add-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+form#add-menu .input-group{
+    margin: 15px 0;
+}
+
+form#add-menu .left-area{
+    flex-basis: 30%;
+}
+
+form#add-menu .right-area{
+    flex-basis: 68%;
+}
+
+form#add-menu .right-area .table-responsive{
+    margin-top: 35px;
+}
+
+
+
+/* ===================================== */
+/* ===========ALERT===================== */
+/* ===================================== */
+
+.alert-success,.alert-failed{
+    position: fixed;
+    top: 13%;
+    right: -20%;
+    background: #05c46b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    color: white;
+    z-index: 99;
+    animation: alert-success 2.3s ease-in-out;
+    opacity: 0;
+}
+
+.alert-failed{
+    background: rgb(233, 79, 79) !important;
+}
+
+@keyframes alert-success{
+    0% {
+        opacity: 0;
+    }
+    20% {
+        right: -2%;
+        opacity: 1;
+    }
+    40% {
+        right: -2%;
+        opacity: 1;
+    }
+    60%{
+        right: -2%;
+        opacity: 1;
+    }
+    80%{
+        right: -2%;
+        opacity: 1;
+    }
+    100%{
+        right: -20%;
+        opacity: 0;
+    }
+}
+
+
+
+@keyframes alert-failed{
+    0% {
+        opacity: 0;
+    }
+    20% {
+        right: -2%;
+        opacity: 1;
+    }
+    40% {
+        right: -2%;
+        opacity: 1;
+    }
+    60%{
+        right: -2%;
+        opacity: 1;
+    }
+    80%{
+        right: -2%;
+        opacity: 1;
+    }
+    100%{
+        right: -20%;
+        opacity: 0;
+    }
+}
+
+
+/* ===================================== */
+/* ===========BUTTON , A ================*/
+/* ===================================== */
+a.btn-back{
+    background-color: black;
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 0.9rem;
+}
+
+p.empty{
+    margin-top: 10px;
+}
+
+a.reset{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 7px;
+    font-size: 0.9rem;
+}
+
+form#add-prod a.btn-remove-img{
+    display: inline-block !important;
+    padding: 10px; 
+    background-color: gray !important;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+
+/* ===================================== */
+/* ===========ERROR LAYOUT===============*/
+/* ===================================== */
+.error-layout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    font-size: 0.9rem;
+}
+
+.error-layout h1{
+    color: gray;
+}
+
+.error-layout p{
+    margin-top: 5px;
+}
+
+/* ===================================== */
+/* ===========FREE SETTING============== */
+/* ===================================== */
+.statis{
+    font-size: 0.9rem;
+}
+
+span.total{
+    color: blue;
+}
+
+span.pending{
+    background-color: red;
+    color: white;
+}
+
+.status_change,.status_change_post_cat{
+    background: white !important;
+}
+
+.status_change_slider{
+    background: white !important;
+}
+
+.scale-img{
+    width: 50px;
+    height: auto;
+}
+
+.scale-img img{
+    width: 100%;
+    height: auto;
+}
+
+.search.media{
+    width: 400px;
+}
+
+.search.media #form_search{
+    width: 100%;
+}
+
+.search.media #form_search input{
+    width: 100%;
+}
+
+span.caption{
+    font-size: 0.8rem;
+    color:gray;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.order .status.pending{
+    color: rgb(255, 153, 0) !important;
+}
+
+.order .status.processing{
+    color: rgb(255, 68, 0) !important;
+}
+
+.order .status.shipped{
+    color: rgb(75, 128, 0) !important;
+}
+
+.order .status.delivered{
+    color: green !important;
+}
+
+.order .status.canceled{
+    color: red !important;
+}
+
+.order .search{
+    width: 220px;
+}
+
+.tb_customers .status.banned{
+    width: 110px !important;
+}
+
+.tb_customers .status.active{
+    width: 110px !important;
+}
+
+/* NOTIFICATION */
+.notification{
+    font-size: 1.5rem;
+    margin-right: 15px;
+    position: relative;
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.notification:hover{
+    background-color: #f2f2f2;;
+    border-radius: 7px;
+}
+
+
+
+.box{
+    display: flex;
+    align-items: center;
+}
+
+.noti-badge{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 19px;
+    width: 19px;
+    border-radius: 100%;
+    padding: 2px;
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+}
+
+.noti-info{
+    font-size: 0.8rem;
+    position: absolute;
+    background-color: white;
+    transform: translate(-155px,12px);
+    border-left: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    padding: 10px 15px;
+    border-radius: 7px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s all;
+    max-height: 300px;
+    min-width: 300px;
+    overflow-y: auto;
+}
+
+.notification:hover .noti-info{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.noti-info span{
+    display: block;
+    padding: 10px;
+    background-color: #f2f2f2;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}

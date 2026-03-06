@@ -1,0 +1,44 @@
+.dashboard{
+    background-color: transparent !important;
+    padding: 0 !important;
+}
+
+.dashboard .title{
+    background-color: white;
+    padding: 15px;
+    border-radius: 7px;
+
+}
+
+.dashboard  .box{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.dashboard  .box a{
+    transition: all 0.2s;
+}
+
+.dashboard  .box a:hover{
+    background-color: #2F46DA;
+    color: white;
+}
+
+.dashboard .order-quantity{
+    padding: 15px;
+    background-color: white;
+    color: black;
+    border-radius: 7px;
+    margin-top: 8px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.new-order{
+    background-color: white;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 7px;
+}

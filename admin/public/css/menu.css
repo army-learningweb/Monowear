@@ -1,0 +1,18 @@
+.focus-menu-auto{
+    background-color: #2F46DA;
+    border-radius: 7px;
+    transition: all 0.3s;
+}
+
+.focus-menu-child{
+    background-color: rgba(220, 220, 220, 0.249) !important; 
+    border-radius: 7px;
+}
+
+.remove-focus a.sub_link{
+    background-color: transparent;
+}
+
+.open{
+    display: block !important;
+}

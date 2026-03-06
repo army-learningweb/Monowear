@@ -1,0 +1,106 @@
+body {
+    background-color: #212529;
+}
+
+#wrapper{
+    width: 1170px;
+    height: 100vh;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#form-register {
+    width: 47vw;
+    height: auto;
+    border-radius: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-area{
+    flex-basis: 50%;
+    padding: 25px;
+}
+
+.right-area{
+    flex-basis: 50%;
+    background-color: #2F46DA;
+    padding: 25px;
+    border-radius: 0 7px 7px 0;
+    color: white;
+}
+
+.right-area h2{
+    margin-bottom: 15px !important;
+}
+
+.right-area p{
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+.right-area a{
+    background-color: white;
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    border-radius: 7px;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+#form-register {
+    box-sizing: border-box;
+    background-color: white;
+}
+
+#form-register h2{
+    margin-bottom: 20px;
+}
+
+#form-register .input-group {
+    position: relative;
+    margin-top: 10px;
+}
+
+#form-register input {
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid gainsboro;
+}
+
+#form-register label{
+    position: absolute;
+    font-size: 14px;
+    left: 15px;
+    transform: translateY(85%);
+    pointer-events: none;
+    color:gray;
+    transition: all 0.2s ease-in-out;
+} 
+
+#form-register input:focus {
+    outline: 2px solid #2F46DA;
+}
+
+#form-register input:focus + label,
+#form-register input:not(:placeholder-shown) + label{
+    transform: translateY(-65%);
+    font-size: 12px;
+    background-color: white;
+    padding: 0px 5px;
+    color: #2F46DA !important;
+    left: 10px;
+}
+
+#form-register .btn-login{
+    background-color: #2F46DA !important;
+    color:white;
+}
