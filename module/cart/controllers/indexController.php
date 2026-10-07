@@ -90,7 +90,6 @@ function delete_itemAction()
 // Thay đổi số lượng ở trang giỏ hàng
 function change_quantityAction()
 {
-
     $prod_id = $_POST['prod_id'];
     $prod_quantity = $_POST['prod_quantity'];
 

@@ -4,7 +4,7 @@
 
 use LDAP\Result;
 
-function db_connect($database)
+function db_connect(array $database)
 {
     global $conn;
     $conn = mysqli_connect(
